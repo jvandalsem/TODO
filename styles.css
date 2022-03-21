@@ -9,8 +9,8 @@ h4{
 .todo-list{
 	display: flex;
 	flex-direction: column;
-	width: 20%;
-	margin-left: 40%;
+	width: 23%;
+	margin-left: 38.5%;
 }
 .todo-item{
 	display: flex;
@@ -31,7 +31,7 @@ p{
 	font-family: 'Josefin Sans',sans-serif;
 	font-size: 1em;
 	text-align: center;
-	width: 25%;
+	width: 20%;
 	padding: .25em;
 	padding-top: .4em;
 	border-width: 1.5px;
@@ -72,6 +72,10 @@ p{
 	width: 14px;
 	height: 14px;
 }
+.check:hover{
+	cursor: pointer;
+}
 .complete{
 	text-decoration-line: line-through;
+	order:1;
 }
