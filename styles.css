@@ -1,0 +1,77 @@
+body{
+    font-family: 'Josefin Sans',sans-serif;
+	color: white;
+	background:#2A2928;
+}
+h4{
+	text-align: center;
+}
+.todo-list{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	margin-left: 40%;
+}
+.todo-item{
+	display: flex;
+	align-items: center;
+	vertical-align: center;
+	height: 1.5em;
+}
+p{
+	margin-bottom: .7em;
+}
+.add-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em;
+}
+.todo-input{
+	font-family: 'Josefin Sans',sans-serif;
+	font-size: 1em;
+	text-align: center;
+	width: 25%;
+	padding: .25em;
+	padding-top: .4em;
+	border-width: 1.5px;
+	border-top-style: hidden;
+	border-left-style: hidden;
+	border-right-style: hidden;
+	border-bottom-style: hidden;
+	background-color:#E5E3DF;
+	border-radius: 2.5% 0 0 2.5%;
+}
+.todo-input:focus{
+	outline: none;
+}
+.adder{
+	padding: .25em;
+	border-width: 1px;
+	border-style: none;
+	border-left-style: groove;
+	background-color:#E5E3DF;
+	border-radius: 0 5% 5% 0;
+	transition: 100ms ease-in-out;
+	width: 2.5%;
+	height: 2em;
+}
+.adder:focus{
+	outline: none;
+}
+.adder:hover{
+	cursor: pointer;
+	background-color: #B7B5B2;
+	transition: 100ms ease-in-out;
+}
+.adder:active{
+	background-color: #696866;
+	transition: 100ms ease-in-out;
+}
+.check{
+	width: 14px;
+	height: 14px;
+}
+.complete{
+	text-decoration-line: line-through;
+}
