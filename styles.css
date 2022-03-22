@@ -18,6 +18,9 @@ h4{
 	vertical-align: center;
 	height: 1.5em;
 }
+.todo-item:hover{
+	cursor: default;
+}
 p{
 	margin-bottom: .7em;
 }
@@ -78,4 +81,11 @@ p{
 .complete{
 	text-decoration-line: line-through;
 	order:1;
+}
+.material-icons-outlined:hover{
+	cursor: pointer;
+	color: lime;
+}
+.show-options{
+	display: block;
 }
