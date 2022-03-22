@@ -6,24 +6,6 @@ body{
 h4{
 	text-align: center;
 }
-.todo-list{
-	display: flex;
-	flex-direction: column;
-	width: 23%;
-	margin-left: 38.5%;
-}
-.todo-item{
-	display: flex;
-	align-items: center;
-	vertical-align: center;
-	height: 1.5em;
-}
-.todo-item:hover{
-	cursor: default;
-}
-p{
-	margin-bottom: .7em;
-}
 .add-wrap{
 	display: flex;
 	justify-content: center;
@@ -70,6 +52,24 @@ p{
 .adder:active{
 	background-color: #696866;
 	transition: 100ms ease-in-out;
+}
+.todo-list{
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	margin-left: 32%;
+}
+.todo-item{
+	display: flex;
+	align-items: center;
+	vertical-align: center;
+	height: 1.5em;
+}
+.todo-item:hover{
+	cursor: default;
+}
+p{
+	margin-bottom: .7em;
 }
 .check{
 	width: 14px;

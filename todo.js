@@ -22,17 +22,13 @@ $('.adder').on('click',()=>{
 				console.log('checked')
 			}
 			else{
-				try{
-					$(this)[0].children[3].style.display = 'block'
-					$(this)[0].children[4].style.display = 'block'
-				}catch{}
+				$(this)[0].children[3].style.display = 'block'
+				$(this)[0].children[4].style.display = 'block'
 			}
 		})
 		$todoItem.on('mouseout',function(){
-			try{
-				$(this)[0].children[3].style.display = 'none'
-				$(this)[0].children[4].style.display = 'none'
-			}catch{}
+			$(this)[0].children[3].style.display = 'none'
+			$(this)[0].children[4].style.display = 'none'
 		})
 		$('.todo-list').append($($todoItem))
 		$('.todo-input')[0].value = ''
