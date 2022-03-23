@@ -38,10 +38,9 @@ $('.adder').on('click',()=>{
 	})
 	$todoItem[0].children[4].addEventListener('click',function(){
 		const $task = $($todoItem[0].children[2])
-		const $editInput = $(`<input placeholder=\'Edit\' style=\'width:${$task.text().length-1}ch\'>`).val( $task.text() )
+		const $editInput = $(`<input placeholder=\'Edit\' style=\'width:${$task.text().length}ch\'>`).val( $task.text() )
 		$editInput.addClass('changeTask')
 		$task.replaceWith($editInput)
-		$editInput.focus()
 		const save = () => {
 			const $newTask = $('<p></p>').text($editInput.val())
 			$editInput.replaceWith($newTask)
