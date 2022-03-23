@@ -19,7 +19,7 @@ $('.adder').on('click',()=>{
 	})
 	
 	$todoItem.on('mouseover',function(){
-		if($('.check').prop('checked')===true){
+		if($(this)[0].children[1].checked===true){
 			console.log('checked')
 		}
 		else{
@@ -35,6 +35,24 @@ $('.adder').on('click',()=>{
 	
 	$todoItem[0].children[3].addEventListener('click',function(){
 		$todoItem[0].parentElement.removeChild($todoItem[0])
+	})
+	$todoItem[0].children[4].addEventListener('click',function(){
+		const $task = $($todoItem[0].children[2])
+		const $editInput = $(`<input placeholder=\'Edit\' style=\'width:${$task.text().length-1}ch\'>`).val( $task.text() )
+		$editInput.addClass('changeTask')
+		$task.replaceWith($editInput)
+		$editInput.focus()
+		const save = () => {
+			const $newTask = $('<p></p>').text($editInput.val())
+			$editInput.replaceWith($newTask)
+		}
+		$editInput.one('blur', save).focus();
+		$editInput[0].addEventListener("keyup",(e)=>{
+			if (e.keyCode === 13) {
+				e.preventDefault();
+				save()
+			}
+		})
 	})
 	
 	if(validate()){
@@ -59,3 +77,4 @@ $('.todo-input')[0].addEventListener("keyup",(e)=>{
 	}
 })
 
+// Local Storage
